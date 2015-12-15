@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+	Employee Sample CRUD App Version: 1.0
+
+-->
+<html>
+    <head>
+        <title>Sample Mobile App</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <!-- Libraries used -->
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <!--  TO_DO: Change to minified file when done testing
+        <script src="lib/progress.all.min.js"></script>
+         --> 
+                
+		<script src="lib/progress.all.js"></script>
+        
+        <!-- JavaScript files - app.js must be first -->
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/jsdoSettings.js"></script>
+ 
+        <!-- ViewModels here -->
+        <script src="viewModels/loginViewModel.js"></script>
+		<script src="viewModels/dataViewModel.js"></script>
+    </head>
+    <body id="sampleApp">
+        <!-- Layout -->
+        <div data-role="layout" data-id="tabstrip-layout">
+            <!-- Header -->
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+
+            <!-- Application views will be rendered here -->
+
+            <!-- Footer -->
+            <div data-role="footer">
+                <div class=buttonDiv>
+                    <a class="dataButton" id="deleteBtn"  data-role="button" data-click="app.viewModels.dataViewModel.verifyDoDelete">Delete</a>
+                    <a class="dataButton" id="submitBtn"  data-role="button" data-click="app.viewModels.dataViewModel.submit">Submit</a>
+                    <a class="dataButton" id="errorBtn"   data-role="button" href="views/errorListView.html">Errors</a>
+                </div>
+                          
+                <div data-role="tabstrip" id="navigateTab" data-select="app.onSelectTab">
+                    <a href="views/home.html" data-icon="home" id="homeIcon">Home</a>
+                    <a href="views/loginView.html" data-icon="contacts" id="loginIcon" data-click="app.viewModels.dataViewModel.showList">Login</a>
+                    <a href="views/listView.html" data-icon="search" id="listIcon" data-click="app.viewModels.dataViewModel.showList">List</a>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+  </html>
+
+

@@ -1,0 +1,97 @@
+<!-- Edit Detail View -->
+  
+<div id="editDetail"
+     data-role="view" 
+     data-title="Edit Details" 
+     data-show="app.viewModels.dataViewModel.onShowEditDetailView" 
+     data-hide="app.viewModels.dataViewModel.onHideEditDetailView" 
+     data-init="app.viewModels.dataViewModel.onInitEditDetailView" 
+     data-model="app.viewModels.dataViewModel">
+    
+    <header data-role="header" data-id="jitterz-default-header">
+        <div data-role="navbar">
+            <a id="editDetailCancelButton" data-role="button" data-align="left" data-click="app.viewModels.dataViewModel.cancelEditDetail" type="button">Cancel</a>
+            <span data-role="view-title"></span>
+            <a id="editDetailDoneButton" data-role="button" data-align="right" data-click="app.viewModels.dataViewModel.doneEditDetail"  type="button">Done</a>
+        </div>
+    </header>
+    
+    <div data-role="content">
+        <ul id="editDetailList"
+            data-role="listview"
+            data-init="app.viewModels.dataViewModel.onInitEditDetailView"
+            data-show="app.viewModels.dataViewModel.onShowEditDetailView"  
+            data-style="inset">
+            <li>
+				<label><input type="text"  readonly="true" data-bind="value: selectedRow.EmpNum"/>Emp Num:</label>
+            </li>
+             <li>
+                <label><input type="text" data-bind="value: selectedRow.FirstName"/>First Name:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.LastName"/>Last Name:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.Address"/>Address:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.Address2"/>Address2:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.City"/>City:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.State"/>State:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.PostalCode"/>Postal Code:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.HomePhone"/>Home Phone:</label>
+            </li>
+            <li>
+                <label><input type="tel" data-bind="value: selectedRow.WorkPhone"/>Work Phone:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.DeptCode"/>Dept Code:</label>
+            </li>
+            <li>
+                <label><input type="text" data-bind="value: selectedRow.Position"/>Position:</label>
+            </li>
+            <li>
+                <label><input class="dateField" type="date" data-bind="value: selectedRow.Birthdate"/>Birth Date:</label>
+            </li>
+            <li>
+                <label><input class="dateField" type="date" data-bind="value: selectedRow.StartDate"/>Start Date:</label>
+            </li>
+            <li>
+                <label><input type="number" step="1" min="0" data-bind="value: selectedRow.VacationDaysLeft"/>Vac Days:</label>
+            </li>
+            <li>
+                <label><input type="number" step="1" min="0" min=0 data-bind="value: selectedRow.SickDaysLeft"/>Sick Days:</label>
+            </li>
+    	</ul>    
+    </div>
+</div>
+
+
+<div id="modalview-confirm" data-role="modalview">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span>Confirm Delete</span>
+        </div>
+    </div>
+    <div>
+    	<p>Are you sure you want to delete the selected record?</p>
+    </div>
+    <div class="buttonDiv">
+		<p align="center">
+			<button class="msgButton" data-click="app.viewModels.dataViewModel.cancelDelete" data-role="button">Cancel</button>
+            <button class="msgButton" data-click="app.viewModels.dataViewModel.deleteRow" data-role="button">Delete</button>
+       	</p>
+    </div>
+</div>
+
+
+
+    
