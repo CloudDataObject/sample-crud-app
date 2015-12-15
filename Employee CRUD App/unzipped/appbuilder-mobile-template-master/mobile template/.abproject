@@ -1,0 +1,45 @@
+{
+  "ProjectName": "ProgressDataServiceMobileTemplate",
+  "ProjectGuid": "57b03826-20f6-4e16-931d-e40105e6bf08",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ProgressDataServiceMobileTemplate",
+  "DisplayName": "ProgressDataServiceMobileTemplate",
+  "Author": "",
+  "Description": "ProgressDataServiceMobileTemplate",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{76214d27-f593-41e4-bd5c-c7a397d8e447}",
+  "WP8ProductID": "{b20f98dc-7a7e-4f92-9993-be1c71ceafa4}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ProgressDataServiceMobileTemplate",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}

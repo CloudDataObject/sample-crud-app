@@ -1,0 +1,45 @@
+
+<!-- List view -->
+<div id="list"
+     data-role="view" 
+     data-style="inset" 
+     data-before-show="app.viewModels.dataViewModel.onBeforeShowListView"
+     data-init="app.viewModels.dataViewModel.onInitListView"
+     data-show="app.viewModels.dataViewModel.onShowListView"
+     data-model="app.viewModels.dataViewModel">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="refreshButton" data-role="button" data-icon="refresh" data-click="app.viewModels.dataViewModel.refresh" data-align="left"></a>
+            <a id="addNewEmpButton" data-role="button" data-icon="add" href="views/editDetailView.html?addMode=true" data-align="right"></a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+    <div>
+        <ul id="empListView" 
+            data-role="listview" data-style="inset">
+        </ul>
+    </div>
+</div>
+
+<div id="confirmRefresh" 
+     data-role="modalview">
+     <div data-role="header">
+          <div data-role="navbar">
+              <span>Unsaved Changes</span>
+          </div>
+     </div>
+
+     <div id="msgText">
+       <p>Press Cancel so you can save the changes first.</p>
+       <p>Press Refresh to continue without saving.</p>
+     </div>
+
+     <p align="center">
+        <button class="dlgButton" data-click="app.viewModels.dataViewModel.cancelRefresh" data-role="button">Cancel</button>
+        <button class="dlgButton" data-click="app.viewModels.dataViewModel.continueRefresh" data-role="button">Refresh</button>
+     </p>
+</div>
+
+
+
+

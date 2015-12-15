@@ -1,0 +1,44 @@
+<!-- Home View -->
+
+<div id="home"
+     data-role="view"
+     data-title="Home"
+     data-show="app.onShowHomeView">
+
+	</br>
+    <div style="float: left;">
+        <img src="img/Progress_spark100px.png"></img>
+    </div>
+
+    <div style="float: center; font-size: 16pt">
+		<p>Sample Data App<p>
+    </div>
+
+
+	<div style="float: left; width: 100%;">
+   		<p>This sample app is a CRUD+Submit enabled mobile app in the Telerik Platform&trade; using a Progress Data Service.
+            </br>
+			</br>
+			It demonstrates CRUD+Submit capabilities accessing a Progress Data Service, along with built-in session management.. 
+            </br>
+			</br>
+            Please open the README.txt for additional info.
+		</p>
+	</div>
+</div>
+
+
+<!-- Modal Message Dialog  -->
+<div id="modalview-displayMsg" 
+    data-role="modalview"  data-init="app.onInitDisplayMessage">
+    <div data-role="header">
+    	<div data-role="navbar">
+        	<span id="modalViewTitle">Title</span>
+        </div>
+    </div>
+
+    <p align="center" id="modalViewMessage" data-bind="">Appropriate error message goes here</p>
+    <p align="center">
+        <button class="dlgButton" style="color:black; background-color: light gray" data-role="button" data-click="app.onCloseDisplayMessage">Ok</button>
+    </p>
+</div>

@@ -1,0 +1,77 @@
+<!-- Detail View -->
+  
+<div id="detail"
+     data-role="view" 
+     data-title="Details"
+     data-show="app.viewModels.dataViewModel.onShowDetailView" 
+     data-hide="app.viewModels.dataViewModel.onHideDetailView"  
+     data-model="app.viewModels.dataViewModel">
+    
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-role="button"  href="views/listView.html" data-align="left">Back</a>
+            <span data-role="view-title"></span> 
+            <a id="editButton" data-role="button" href="views/editDetailView.html" data-align="right">Edit</a>
+        </div>
+    </header>
+    
+    <div id="detailForm">
+        <ul id="detailList"
+            data-role="listview"   
+            data-style="inset">
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.EmpNum"/>Emp Num:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.FirstName"/>First Name:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.LastName"/>Last Name:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.Address"/>Address:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.Address2"/>Address2:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.City"/>City:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.State"/>State:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.PostalCode"/>Postal Code:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.HomePhone"/>Home Phone:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.WorkPhone"/>Work Phone:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.DeptCode"/>Dept Code:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.Position"/>Position:</label>
+            </li>
+            <li>
+                <label><input class="dateField" type="date" readonly="true" data-bind="value: selectedRow.Birthdate"/>Birth Date:</label>
+            </li>
+            <li>
+                <label><input class="dateField" type="date" readonly="date" data-bind="value: selectedRow.StartDate"/>Start Date:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.VacationDaysLeft"/>Vac Days:</label>
+            </li>
+            <li>
+                <label><input type="text" readonly="true" data-bind="value: selectedRow.SickDaysLeft"/>Sick Days:</label>
+            </li>
+ 		</ul>
+    </div>         
+</div>
+
+
+
+
+
