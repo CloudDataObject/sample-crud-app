@@ -10,7 +10,7 @@ This app can be cloned in the Telerik Platform (by selecting above button) to bu
 This sample is a fully functional CRUD app utilizing all capabilities found in the default Progress Data Service template. 
 It makes use of the JavaScript Data Object dialect of the Kendo UI DataSource to provide data to the app's default listview control, which, in turn, utilizes the JavaScript data object (JSDO) to access the data and operations of a Mobile resource provided by a remote data service.
 
-The app supports anonymous, form and basic authentication to an OpenEdge or Rollbase server using the JSDO Session management and a JSDO catalog.
+The app can support anonymous, form, or basic authentication to an OpenEdge or Rollbase server using the JSDO Session management, depending upon the corresponding backend's authentication model. The current configuration of the sample app supports the anonymous model.
 
 In addition, it provides the user with the ability to perform CUD operations (create, update, and delete). The user can click on a row in the listview control, which brings user to a detail view, displaying that row's data in detail.  In order to update or delete the selected row, the user then clicks on the "Edit" button which brings user to the edit detail view to perform updates or deletion of the row. To add a new row, the user can click on the add button found on the list view.
 
