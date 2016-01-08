@@ -1,6 +1,9 @@
 # sample-crud-app
 Sample mobile app using the Kendo UI DataSource to list and update records from the employee table in the sports2000 sample OE database. Can be easily configured to use another remote data service.
 
+The app is accessible by either selecting the “Try in AppBuilder” button, or you can manually download the zip file by 
+selecting the “Download ZIP” button above. Note: The app is not compatible with the Telerik Platform Views service.
+
 
 <a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FCloudDataObject%2Fsample-crud-app" target="_blank"><img src="http://docs.telerik.com/platform/appbuilder/sample-apps/images/try-in-appbuilder.png" alt="Try in AppBuilder" title="Try in AppBuilder" /></a>
 
