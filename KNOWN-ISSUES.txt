@@ -1,14 +1,8 @@
 
 Known Issues for Employee Sample CRUD App
-Version: 1.0
+Version: 1.1
 
-1.) This issue occurs when app is run in CRUD mode (i.e. no submit).  If user performs an update on a row which results in a row error on
-backend service (ex. updating EmpNum to an existing employee), then hits the “Save” button, the error message is not displayed properly, 
-and all buttons become non-operative. 
-
-This issue will be fixed in 4.3 release of jsdo.
-
-2.) This issue occurs when the app is run in CRUD mode (i.e. no submit). If user adds a new record, the EmpNum field is created on 
+1.) This issue occurs when the app is run in CRUD mode (i.e. no submit). If user adds a new record, the EmpNum field is created on 
 Backend, and returned to client. But the EmpNum is not always displayed in the controls after the “Save” button is selected.
 
 

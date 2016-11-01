@@ -5,7 +5,7 @@ The app is accessible by either selecting the “Try in AppBuilder” button, or
 selecting the “Download ZIP” button above. Note: The app is not compatible with the Telerik Platform Views service.
 
 
-<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FCloudDataObject%2Fsample-crud-app" target="_blank"><img src="http://docs.telerik.com/platform/appbuilder/sample-apps/images/try-in-appbuilder.png" alt="Try in AppBuilder" title="Try in AppBuilder" /></a>
+<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FCloudDataObject%2Fappbuilder-mobile-template">Try in AppBuilder</a>
 
 
 This app can be cloned in the Telerik Platform (by selecting above button) to build a Hybrid Mobile App. You can explore and modify the code, and build and run it on Android and iOS devices.
