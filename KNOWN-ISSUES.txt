@@ -1,8 +1,0 @@
-
-Known Issues for Employee Sample CRUD App
-Version: 1.1
-
-1.) This issue occurs when the app is run in CRUD mode (i.e. no submit). If user adds a new record, the EmpNum field is created on 
-Backend, and returned to client. But the EmpNum is not always displayed in the controls after the “Save” button is selected.
-
-
