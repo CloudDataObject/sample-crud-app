@@ -157,15 +157,20 @@
 
          loginErrorFn: function(jsdosession, result, info) {
             var msg = "Error on login";
-             switch (result) {
+            switch (result) {
                 case progress.data.Session.LOGIN_AUTHENTICATION_FAILURE:
-                    msg = msg + " Invalid userid or password";
+                    msg = msg + " Invalid userid or password.";
                     break;
                 case progress.data.Session.LOGIN_GENERAL_FAILURE:
                 default:
-                    msg = msg + " Service " + jsdoSettings.serviceURI + " is unavailable";
+                    if (info && info.errorObject) {
+                        msg = msg + " " + info.errorObject.message;
+                    }
+                    else {
+                        msg = msg + " Service " + jsdoSettings.serviceURI + " is unavailable.";
+                    } 
                     break;
-            }       
+            }      
             app.showError(msg);
             if (info.xhr) {
                 msg = msg + " status (from jqXHT):" + info.xhr.status;
