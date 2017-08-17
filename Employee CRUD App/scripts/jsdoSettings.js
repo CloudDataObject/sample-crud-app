@@ -2,8 +2,8 @@
 
 /* EmployeeSubmitService (with submit support) running on oemobiledemo */
 var jsdoSettings = { 
-		"serviceURI": "http://oemobiledemo.progress.com/EmployeeSubmit",
-        "catalogURIs": "http://oemobiledemo.progress.com/EmployeeSubmit/static/EmployeeSubmitService.json",
+		"serviceURI": "http://oemobiledemo.progress.com/OEMobileDemoServices",
+        "catalogURIs": "http://oemobiledemo.progress.com/OEMobileDemoServices/static/r_Sports_with_SubmitService.json",
         "authenticationModel": "anonymous",
         "displayFields": "EmpNum, LastName",
         "resourceName": "Employees" 
@@ -14,11 +14,11 @@ var jsdoSettings = {
  * Rename or comment out above jsdoSettings object to use this one as your backend service */
 /*
 var jsdoSettings = { 
-		"serviceURI": "http://oemobiledemo.progress.com/EmployeeCRUD",
-        "catalogURIs": "http://oemobiledemo.progress.com/EmployeeCRUD/static/EmployeeCRUDService.json",
+		"serviceURI": "http://oemobiledemo.progress.com/OEMobileDemoServices",
+        "catalogURIs": "http://oemobiledemo.progress.com/OEMobileDemoServices/static/r_Sports_No_SubmitService.json",
         "authenticationModel": "anonymous",
         "displayFields": "EmpNum, LastName",
-        "resourceName": "Employees-CRUD" 
+        "resourceName": "Employee_No_Submit" 
 }; 
 */
 
